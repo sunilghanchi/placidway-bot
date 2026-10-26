@@ -7,6 +7,8 @@ const {
 } = require("docx");
 
 const OUT = path.resolve("PlacidWay_Chatbot_Assessment_Sunil_Ghanchi.docx");
+const LIVE_URL = "https://placidway-bot.vercel.app";
+const GITHUB_URL = "https://github.com/sunilghanchi/placidway-bot";
 const navy = "0B2A33", teal = "087C78", pale = "E8F4F1", gray = "587078", amber = "EFA85F";
 const sourceUrls = [
   ["Clinic profile", "https://www.placidway.com/profile/5/Alternative-Cancer-Treatment-by-ITC-Immunity-Therapy-Center"],
@@ -42,7 +44,7 @@ const tests = [
 
 const doc = new Document({
   creator: "Sunil Ghanchi",
-  title: "PlacidWay Grounded Care Guide — Assessment Submission",
+  title: "PlacidWay Bot — Assessment Submission",
   description: "Architecture, grounding policy, test results, and limitations for the PlacidWay chatbot assessment.",
   numbering: { config: [{ reference: "bullets", levels: [{ level: 0, format: "bullet", text: "•", alignment: AlignmentType.LEFT, style: { paragraph: { indent: { left: 420, hanging: 220 } } } }] }] },
   styles: {
@@ -57,28 +59,32 @@ const doc = new Document({
     properties: { page: { margin: { top: 900, right: 900, bottom: 850, left: 900 } } },
     footers: { default: new Footer({ children: [new Paragraph({ alignment: AlignmentType.RIGHT, children: [new TextRun({ text: "PlacidWay assessment  ·  Sunil Ghanchi  ·  ", color: gray, size: 17 }), new TextRun({ children: [PageNumber.CURRENT], color: gray, size: 17 })] })] }) },
     children: [
-      new Paragraph({ border: { bottom: { color: amber, size: 18, style: BorderStyle.SINGLE, space: 8 } }, spacing: { after: 360 }, children: [new TextRun({ text: "GROUNDED CARE GUIDE", bold: true, color: teal, size: 18, characterSpacing: 90 })] }),
+      new Paragraph({ border: { bottom: { color: amber, size: 18, style: BorderStyle.SINGLE, space: 8 } }, spacing: { after: 360 }, children: [new TextRun({ text: "PLACIDWAY BOT", bold: true, color: teal, size: 18, characterSpacing: 90 })] }),
       new Paragraph({ text: "PlacidWay Website Knowledge Chatbot", style: "Title" }),
-      new Paragraph({ spacing: { after: 280 }, children: [new TextRun({ text: "AI Automation Engineer assessment submission", color: gray, size: 24 }), new TextRun({ text: "\nSunil Ghanchi  ·  October 26, 2026", color: navy, bold: true, size: 20 })] }),
-      new Paragraph({ shading: { fill: pale, type: ShadingType.CLEAR }, spacing: { before: 180, after: 300 }, indent: { left: 220, right: 220 }, children: [new TextRun({ text: "Live demo  ", bold: true, color: navy, size: 22 }), link("placidway-grounded-chatbot.starrysiren6.chatgpt.site", "https://placidway-grounded-chatbot.starrysiren6.chatgpt.site")] }),
-      p("A small, deterministic chatbot that answers from only the seven approved PlacidWay pages. It cites every factual answer, preserves price context, refuses medical advice, and clearly says when evidence is missing."),
+      new Paragraph({ spacing: { after: 70 }, children: [new TextRun({ text: "AI Automation Engineer assessment submission", color: gray, size: 24 })] }),
+      new Paragraph({ spacing: { after: 280 }, children: [new TextRun({ text: "Sunil Ghanchi  ·  October 26, 2026", color: navy, bold: true, size: 20 })] }),
+      new Paragraph({ shading: { fill: pale, type: ShadingType.CLEAR }, spacing: { before: 180, after: 80 }, indent: { left: 220, right: 220 }, children: [new TextRun({ text: "Live demo  ", bold: true, color: navy, size: 22 }), link("placidway-bot.vercel.app", LIVE_URL)] }),
+      new Paragraph({ shading: { fill: pale, type: ShadingType.CLEAR }, spacing: { after: 300 }, indent: { left: 220, right: 220 }, children: [new TextRun({ text: "GitHub  ", bold: true, color: navy, size: 22 }), link("github.com/sunilghanchi/placidway-bot", GITHUB_URL)] }),
+      p("A full-stack retrieval-augmented generation chatbot that answers from only the seven approved PlacidWay pages. It retrieves source chunks with FAISS, generates evidence-bound answers with Gemini, preserves price context, refuses individualized medical advice, and clearly says when evidence is missing."),
       h2("What I chose and why"),
-      p("I used buildless HTML, CSS, and JavaScript with a curated JSON knowledge base and deterministic retrieval. For a seven-page medical-information corpus, this design is easier to inspect and less likely to invent a price or medical claim than an unconstrained generative model. It also has no runtime API cost or secret keys."),
+      p("I used FastAPI for the backend, Gemini 3.5 Flash-Lite for answer generation, Gemini Embedding 2 at 768 dimensions for retrieval embeddings, FAISS IndexFlatIP as the free local vector database, and buildless HTML, CSS, and JavaScript for the single-page interface. This stack stays within free-tier services while keeping the retrieval and safety pipeline inspectable."),
       h2("Delivered"),
       bullet("Public, mobile-responsive chat interface with no login required"),
-      bullet("Seven-source allowlist, clickable citations, and a visible evidence trail"),
+      bullet("Seven-source allowlist with chunk-level retrieval and in-page citation popups"),
+      bullet("Gemini generation constrained to retrieved evidence and validated before display"),
       bullet("Explicit guards for medical advice, booking, out-of-scope questions, and false price premises"),
-      bullet("Refresh ingestion script with a clear User-Agent and 1.1-second request spacing"),
-      bullet("Follow-up topic memory and browser-local logging for unanswered questions"),
+      bullet("GitHub source repository and verified Vercel production deployment"),
       new Paragraph({ children: [new PageBreak()] }),
 
       new Paragraph({ text: "Architecture and grounding", heading: HeadingLevel.HEADING_1 }),
       h2("Pipeline"),
-      bullet("Ingest: only the seven supplied URLs are fetchable by scripts/ingest.mjs."),
-      bullet("Review: extracted text is reviewed into concise source records; prices retain currency, duration, and inclusion context."),
-      bullet("Route: high-risk intents are handled before retrieval—medical safety, booking, unsupported premises, and out-of-scope requests."),
-      bullet("Retrieve: explicit intent matches answer price and package questions; weighted keyword matching handles lower-risk questions."),
-      bullet("Answer: factual responses always attach source objects rendered as links in the chat and evidence panel."),
+      bullet("Ingest: scripts/ingest.mjs fetches only the seven supplied URLs with a clear User-Agent and approximately one request per second."),
+      bullet("Chunk: reviewed facts are stored as 32 auditable chunks with source ID, page title, page type, URL, and exact text."),
+      bullet("Embed: Gemini Embedding 2 creates 768-dimensional document and query vectors."),
+      bullet("Retrieve: normalized vectors are searched with FAISS IndexFlatIP using cosine-equivalent similarity; the top six relevant chunks are considered."),
+      bullet("Generate: Gemini 3.5 Flash-Lite receives only the retrieved evidence, recent chat history, and safety flags, and returns structured JSON with citation IDs."),
+      bullet("Validate: unsupported prices and unsafe medical claims are blocked before the answer reaches the browser."),
+      bullet("Cite: every returned citation retains its chunk ID, supporting excerpt, and original PlacidWay URL for the in-page source popup."),
       h2("Safety contract"),
       bullet("Never use facts from pages outside the supplied allowlist."),
       bullet("Never infer missing prices, recovery times, diagnoses, or treatment suitability."),
@@ -86,7 +92,7 @@ const doc = new Document({
       bullet("Say “I don’t know from the approved pages” when retrieval is insufficient."),
       bullet("For individual medical decisions, recommend a qualified physician or oncologist."),
       h2("Refresh design"),
-      p("The live Refresh button reloads the deployed knowledge snapshot without cache. Maintainers run npm run ingest to fetch the allowlisted pages, review the diff, update curated facts, run validation, and redeploy. Human review is intentional for medical and price content."),
+      p("Maintainers run npm run ingest to fetch the allowlisted pages, review the extracted diff, update data/knowledge.json, and rebuild the FAISS index through the protected reindex endpoint or a controlled redeploy. A SHA-256 digest prevents a stale index from being paired with changed knowledge. Human review is intentional for medical and price content."),
       h2("Approved sources"),
       ...sourceUrls.map(([label, url], index) => new Paragraph({ spacing: { after: 100 }, children: [new TextRun({ text: `${index + 1}. `, bold: true, color: amber }), link(label, url)] })),
       new Paragraph({ children: [new PageBreak()] }),
@@ -109,18 +115,24 @@ const doc = new Document({
 
       new Paragraph({ text: "Limitations and next steps", heading: HeadingLevel.HEADING_1 }),
       h2("Known limitations"),
-      bullet("Deterministic phrasing coverage is narrower than an LLM-based RAG system."),
-      bullet("Multi-turn context is limited to lightweight topic carry-over."),
-      bullet("The source refresh flow requires curator review and redeployment."),
+      bullet("Curated facts require human review after a source page changes."),
+      bullet("The Gemini free tier has rate limits and may temporarily reject requests at peak usage."),
+      bullet("FAISS is local to each backend instance; a larger multi-instance deployment would need shared index distribution."),
       bullet("Unanswered logs are browser-local rather than centrally aggregated."),
       h2("What I would improve with another week"),
-      p("I would add a server-side extractor with snapshot diffs, schema validation for price facts, multilingual embeddings for retrieval, automated adversarial tests, and privacy-reviewed aggregate gap logging. I would retain the deterministic safety router in front of any LLM so medical-advice requests, false prices, and unsupported comparisons remain predictable."),
+      p("I would add automated page-extraction diffs, schema validation for price facts, a reranker, multilingual evaluation, prompt-injection tests, and privacy-reviewed centralized gap logging. I would also add a scheduled refresh workflow with human approval before medical or price changes become patient-facing. The deterministic safety checks would remain in front of and behind the LLM."),
       h2("Code walkthrough"),
-      bullet("dist/app.js — intent safety router, retrieval, citations, topic carry-over, and local logging"),
+      bullet("app/main.py — FastAPI chat endpoint, evidence prompt, citation mapping, and response validation"),
+      bullet("app/rag.py — Gemini embeddings and FAISS chunk retrieval"),
+      bullet("app/safety.py — deterministic medical and price safeguards"),
+      bullet("dist/app.js — chat interaction, loading state, chunk citations, and source popup"),
       bullet("data/knowledge.json — seven auditable source records and their grounded facts"),
       bullet("scripts/ingest.mjs — polite allowlisted ingestion"),
       bullet("scripts/check.mjs — source-count and deployment-file validation"),
       bullet("README.md and TEST_RESULTS.md — setup, design decisions, limitations, and reproducible results"),
+      h2("Project links"),
+      new Paragraph({ spacing: { after: 100 }, children: [new TextRun({ text: "Live deployment: ", bold: true, color: navy }), link(LIVE_URL, LIVE_URL)] }),
+      new Paragraph({ spacing: { after: 100 }, children: [new TextRun({ text: "GitHub repository: ", bold: true, color: navy }), link(GITHUB_URL, GITHUB_URL)] }),
       new Paragraph({ spacing: { before: 420 }, border: { top: { color: amber, size: 12, style: BorderStyle.SINGLE, space: 10 } }, children: [new TextRun({ text: "Accuracy over fluency. Evidence over confidence.", font: "Georgia", bold: true, color: navy, size: 26 })] })
     ]
   }]
