@@ -81,7 +81,9 @@ Open `http://localhost:4173`. On first startup, the backend embeds the 32 curate
 
 ## Free public deployment
 
-The repository includes a Dockerfile compatible with a free CPU Hugging Face Space. Create a Docker Space, add `GEMINI_API_KEY` and `ADMIN_REFRESH_TOKEN` as Space secrets, and push this repository. The API key remains server-side.
+The repository is ready for Vercel's FastAPI preset and includes the small prebuilt FAISS index so serverless cold starts do not need to regenerate document embeddings. Import the GitHub repository, add `GEMINI_API_KEY` as a sensitive environment variable, and deploy. The API key remains server-side.
+
+The included Dockerfile also supports a free CPU Hugging Face Space if a container deployment is preferred.
 
 ## API
 

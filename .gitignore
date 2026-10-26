@@ -2,10 +2,6 @@
 .venv/
 __pycache__/
 *.pyc
-storage/*.faiss
-storage/*.json
-!storage/.gitkeep
-
 # Local UI review captures
 simple-ui-preview.png
 placidway-bot-preview.png

@@ -1,0 +1,263 @@
+{
+  "digest": "ca73d98aa09c0fbd696e38dd26544affa9f36d0afaf865f54c72a785a8de6370",
+  "model": "gemini-embedding-2",
+  "dimensions": 768,
+  "chunks": [
+    {
+      "chunk_id": "clinic:1",
+      "source_id": "clinic",
+      "title": "ITC Immunity Therapy Center \u2014 Alternative Cancer Treatment",
+      "url": "https://www.placidway.com/profile/5/Alternative-Cancer-Treatment-by-ITC-Immunity-Therapy-Center",
+      "source_type": "Clinic profile",
+      "text": "ITC is in Tijuana, Mexico, minutes across the U.S. border, and was founded by Dr. Carlos Bautista."
+    },
+    {
+      "chunk_id": "clinic:2",
+      "source_id": "clinic",
+      "title": "ITC Immunity Therapy Center \u2014 Alternative Cancer Treatment",
+      "url": "https://www.placidway.com/profile/5/Alternative-Cancer-Treatment-by-ITC-Immunity-Therapy-Center",
+      "source_type": "Clinic profile",
+      "text": "The approach begins with medical-record review, then individual planning, treatment explanation, daily monitoring, follow-up support, and coordination with the patient's existing doctors."
+    },
+    {
+      "chunk_id": "clinic:3",
+      "source_id": "clinic",
+      "title": "ITC Immunity Therapy Center \u2014 Alternative Cancer Treatment",
+      "url": "https://www.placidway.com/profile/5/Alternative-Cancer-Treatment-by-ITC-Immunity-Therapy-Center",
+      "source_type": "Clinic profile",
+      "text": "Eligibility depends on cancer type, stage, organ function, previous treatment, medical history, and physical strength; qualified physicians review records before acceptance."
+    },
+    {
+      "chunk_id": "clinic:4",
+      "source_id": "clinic",
+      "title": "ITC Immunity Therapy Center \u2014 Alternative Cancer Treatment",
+      "url": "https://www.placidway.com/profile/5/Alternative-Cancer-Treatment-by-ITC-Immunity-Therapy-Center",
+      "source_type": "Clinic profile",
+      "text": "The base standard multi-week program starts at $18,995 USD; total cost varies with duration, therapies, and diagnostic needs."
+    },
+    {
+      "chunk_id": "clinic:5",
+      "source_id": "clinic",
+      "title": "ITC Immunity Therapy Center \u2014 Alternative Cancer Treatment",
+      "url": "https://www.placidway.com/profile/5/Alternative-Cancer-Treatment-by-ITC-Immunity-Therapy-Center",
+      "source_type": "Clinic profile",
+      "text": "Standard inclusions listed on the profile include physician consultations and daily care, a customized therapy suite, daily IV nutrition and natural supplements, monitoring and nursing care, local transportation assistance, and companion support."
+    },
+    {
+      "chunk_id": "clinic:6",
+      "source_id": "clinic",
+      "title": "ITC Immunity Therapy Center \u2014 Alternative Cancer Treatment",
+      "url": "https://www.placidway.com/profile/5/Alternative-Cancer-Treatment-by-ITC-Immunity-Therapy-Center",
+      "source_type": "Clinic profile",
+      "text": "The clinic is near San Diego International Airport and its page says dedicated shuttle services support border crossings and local transit."
+    },
+    {
+      "chunk_id": "clinic:7",
+      "source_id": "clinic",
+      "title": "ITC Immunity Therapy Center \u2014 Alternative Cancer Treatment",
+      "url": "https://www.placidway.com/profile/5/Alternative-Cancer-Treatment-by-ITC-Immunity-Therapy-Center",
+      "source_type": "Clinic profile",
+      "text": "The page says outcomes vary and patients should discuss risks and combinations with qualified physicians and avoid delaying necessary standard treatment without consulting their oncologist."
+    },
+    {
+      "chunk_id": "adenocarcinoma:1",
+      "source_id": "adenocarcinoma",
+      "title": "Alternative Adenocarcinoma Cancer Treatment in Tijuana",
+      "url": "https://www.placidway.com/package/7903/Alternative-Adenocarcinoma-Cancer-Treatment-Package-in-Tijuana-Mexico-by-ITC",
+      "source_type": "Treatment package",
+      "text": "The 3-week out-patient program is $18,995 USD and the 3-week in-patient program is $30,000 USD."
+    },
+    {
+      "chunk_id": "adenocarcinoma:2",
+      "source_id": "adenocarcinoma",
+      "title": "Alternative Adenocarcinoma Cancer Treatment in Tijuana",
+      "url": "https://www.placidway.com/package/7903/Alternative-Adenocarcinoma-Cancer-Treatment-Package-in-Tijuana-Mexico-by-ITC",
+      "source_type": "Treatment package",
+      "text": "Out-patient includes weekly lab work, one prescribed X-ray, ultrasound, or CT scan, standard program therapies, two health-focused meals on treatment days, standard protocol medications, and one follow-up consultation after three months."
+    },
+    {
+      "chunk_id": "adenocarcinoma:3",
+      "source_id": "adenocarcinoma",
+      "title": "Alternative Adenocarcinoma Cancer Treatment in Tijuana",
+      "url": "https://www.placidway.com/package/7903/Alternative-Adenocarcinoma-Cancer-Treatment-Package-in-Tijuana-Mexico-by-ITC",
+      "source_type": "Treatment package",
+      "text": "In-patient includes 24/7 medical supervision, private room and board, three meals daily, weekly diagnostics, one prescribed imaging study, program therapies, protocol medications, and a follow-up consultation after three months."
+    },
+    {
+      "chunk_id": "adenocarcinoma:4",
+      "source_id": "adenocarcinoma",
+      "title": "Alternative Adenocarcinoma Cancer Treatment in Tijuana",
+      "url": "https://www.placidway.com/package/7903/Alternative-Adenocarcinoma-Cancer-Treatment-Package-in-Tijuana-Mexico-by-ITC",
+      "source_type": "Treatment package",
+      "text": "Optional procedures cost extra, including LAK cells at $2,600 USD and intratumoral immunotherapy at $6,200\u2013$7,200 USD."
+    },
+    {
+      "chunk_id": "adenocarcinoma:5",
+      "source_id": "adenocarcinoma",
+      "title": "Alternative Adenocarcinoma Cancer Treatment in Tijuana",
+      "url": "https://www.placidway.com/package/7903/Alternative-Adenocarcinoma-Cancer-Treatment-Package-in-Tijuana-Mexico-by-ITC",
+      "source_type": "Treatment package",
+      "text": "Specialty medications, external specialist consultations, surgery or biopsies, blood products, emergency services, additional imaging, and home programs are excluded or may cost extra."
+    },
+    {
+      "chunk_id": "adenocarcinoma:6",
+      "source_id": "adenocarcinoma",
+      "title": "Alternative Adenocarcinoma Cancer Treatment in Tijuana",
+      "url": "https://www.placidway.com/package/7903/Alternative-Adenocarcinoma-Cancer-Treatment-Package-in-Tijuana-Mexico-by-ITC",
+      "source_type": "Treatment package",
+      "text": "The typical itinerary is evaluation and initiation in week 1, intensive therapy in week 2, and consolidation and home-care planning in week 3."
+    },
+    {
+      "chunk_id": "adrenal:1",
+      "source_id": "adrenal",
+      "title": "Alternative Adrenal Cancer Treatment in Tijuana",
+      "url": "https://www.placidway.com/package/7902/Alternative-Adrenal-Cancer-Treatment-Package-in-Tijuana-Mexico-by-ITC",
+      "source_type": "Treatment package",
+      "text": "The 3-week out-patient program is $18,995 USD and the 3-week in-patient program is $30,000 USD."
+    },
+    {
+      "chunk_id": "adrenal:2",
+      "source_id": "adrenal",
+      "title": "Alternative Adrenal Cancer Treatment in Tijuana",
+      "url": "https://www.placidway.com/package/7902/Alternative-Adrenal-Cancer-Treatment-Package-in-Tijuana-Mexico-by-ITC",
+      "source_type": "Treatment package",
+      "text": "Out-patient includes weekly lab work, one prescribed X-ray, ultrasound, or CT scan, included program therapies, two health-focused meals on treatment days, standard protocol medications, and one follow-up consultation after three months."
+    },
+    {
+      "chunk_id": "adrenal:3",
+      "source_id": "adrenal",
+      "title": "Alternative Adrenal Cancer Treatment in Tijuana",
+      "url": "https://www.placidway.com/package/7902/Alternative-Adrenal-Cancer-Treatment-Package-in-Tijuana-Mexico-by-ITC",
+      "source_type": "Treatment package",
+      "text": "In-patient includes 24/7 doctor and nursing access, private room and board, three meals daily, weekly diagnostics, one prescribed imaging study, program therapies, protocol medications, and a follow-up consultation after three months."
+    },
+    {
+      "chunk_id": "adrenal:4",
+      "source_id": "adrenal",
+      "title": "Alternative Adrenal Cancer Treatment in Tijuana",
+      "url": "https://www.placidway.com/package/7902/Alternative-Adrenal-Cancer-Treatment-Package-in-Tijuana-Mexico-by-ITC",
+      "source_type": "Treatment package",
+      "text": "The program page describes personalized immune stimulation, diagnostic monitoring, nutritional support, and post-care."
+    },
+    {
+      "chunk_id": "adrenal:5",
+      "source_id": "adrenal",
+      "title": "Alternative Adrenal Cancer Treatment in Tijuana",
+      "url": "https://www.placidway.com/package/7902/Alternative-Adrenal-Cancer-Treatment-Package-in-Tijuana-Mexico-by-ITC",
+      "source_type": "Treatment package",
+      "text": "Optional specialized procedures and contingency services are additional costs."
+    },
+    {
+      "chunk_id": "anal:1",
+      "source_id": "anal",
+      "title": "Alternative Anal Cancer Treatment in Tijuana",
+      "url": "https://www.placidway.com/package/7901/Alternative-Anal-Cancer-Treatment-Package-in-Tijuana-Mexico-by-ITC",
+      "source_type": "Treatment package",
+      "text": "The 3-week out-patient program is $18,995 USD and the 3-week in-patient program is $30,000 USD."
+    },
+    {
+      "chunk_id": "anal:2",
+      "source_id": "anal",
+      "title": "Alternative Anal Cancer Treatment in Tijuana",
+      "url": "https://www.placidway.com/package/7901/Alternative-Anal-Cancer-Treatment-Package-in-Tijuana-Mexico-by-ITC",
+      "source_type": "Treatment package",
+      "text": "Out-patient includes weekly lab work, one prescribed X-ray, ultrasound, or CT scan, standard program therapies, two health-focused meals on treatment days, standard protocol medications, and one follow-up consultation after three months."
+    },
+    {
+      "chunk_id": "anal:3",
+      "source_id": "anal",
+      "title": "Alternative Anal Cancer Treatment in Tijuana",
+      "url": "https://www.placidway.com/package/7901/Alternative-Anal-Cancer-Treatment-Package-in-Tijuana-Mexico-by-ITC",
+      "source_type": "Treatment package",
+      "text": "In-patient includes 24/7 medical supervision, private room and board, three meals daily, weekly diagnostics, one prescribed imaging study, program therapies, protocol medications, and a follow-up consultation after three months."
+    },
+    {
+      "chunk_id": "anal:4",
+      "source_id": "anal",
+      "title": "Alternative Anal Cancer Treatment in Tijuana",
+      "url": "https://www.placidway.com/package/7901/Alternative-Anal-Cancer-Treatment-Package-in-Tijuana-Mexico-by-ITC",
+      "source_type": "Treatment package",
+      "text": "The page describes a 3-week itinerary covering evaluation, intensive therapy, then consolidation and home-care planning."
+    },
+    {
+      "chunk_id": "anal:5",
+      "source_id": "anal",
+      "title": "Alternative Anal Cancer Treatment in Tijuana",
+      "url": "https://www.placidway.com/package/7901/Alternative-Anal-Cancer-Treatment-Package-in-Tijuana-Mexico-by-ITC",
+      "source_type": "Treatment package",
+      "text": "Optional specialized procedures and contingency services are additional costs."
+    },
+    {
+      "chunk_id": "videos:1",
+      "source_id": "videos",
+      "title": "ITC Tijuana Videos \u2014 Alternative Cancer Treatment",
+      "url": "https://www.placidway.com/profile-videos/5/Alternative-Cancer-Treatment-by-ITC-Immunity-Therapy-Center",
+      "source_type": "Clinic videos",
+      "text": "PlacidWay provides a dedicated ITC video page about alternative cancer treatment in Tijuana."
+    },
+    {
+      "chunk_id": "videos:2",
+      "source_id": "videos",
+      "title": "ITC Tijuana Videos \u2014 Alternative Cancer Treatment",
+      "url": "https://www.placidway.com/profile-videos/5/Alternative-Cancer-Treatment-by-ITC-Immunity-Therapy-Center",
+      "source_type": "Clinic videos",
+      "text": "The video page describes individualized, evidence-informed programs based on biological profile, history, and stage."
+    },
+    {
+      "chunk_id": "price-list:1",
+      "source_id": "price-list",
+      "title": "ITC Immunity Therapy Center \u2014 Price List",
+      "url": "https://www.placidway.com/price-list/5/Alternative-Cancer-Treatment-by-ITC-Immunity-Therapy-Center",
+      "source_type": "Price list",
+      "text": "The price list shows $18,995 USD for breast, prostate, lung, pancreatic, colorectal, and colon cancer treatment entries."
+    },
+    {
+      "chunk_id": "price-list:2",
+      "source_id": "price-list",
+      "title": "ITC Immunity Therapy Center \u2014 Price List",
+      "url": "https://www.placidway.com/price-list/5/Alternative-Cancer-Treatment-by-ITC-Immunity-Therapy-Center",
+      "source_type": "Price list",
+      "text": "The page labels these as clinic prices in Tijuana, Mexico; a personalized quote is still appropriate for an individual case."
+    },
+    {
+      "chunk_id": "comparison:1",
+      "source_id": "comparison",
+      "title": "Alternative Medicine Cost Abroad \u2014 Compare Prices 2026",
+      "url": "https://www.placidway.com/search-medical-pricings/Alternative-Medicine/All/1",
+      "source_type": "Price comparison",
+      "text": "The page reports an average alternative-medicine cost abroad of $15,032 USD and a quoted range of $64\u2013$30,000 USD, last verified June 3, 2026."
+    },
+    {
+      "chunk_id": "comparison:2",
+      "source_id": "comparison",
+      "title": "Alternative Medicine Cost Abroad \u2014 Compare Prices 2026",
+      "url": "https://www.placidway.com/search-medical-pricings/Alternative-Medicine/All/1",
+      "source_type": "Price comparison",
+      "text": "Starting estimates shown are $200\u2013$800 for acupuncture, $800\u2013$2,500 for 14-day Ayurvedic Panchakarma, $500\u2013$1,500 for ozone therapy, $3,000\u2013$10,000 for alternative stem cell therapy, and $1,200\u2013$4,000 for a naturopathic wellness retreat."
+    },
+    {
+      "chunk_id": "comparison:3",
+      "source_id": "comparison",
+      "title": "Alternative Medicine Cost Abroad \u2014 Compare Prices 2026",
+      "url": "https://www.placidway.com/search-medical-pricings/Alternative-Medicine/All/1",
+      "source_type": "Price comparison",
+      "text": "Typical inclusions may include assessment, a personalized plan, therapy sessions, prescribed supplements, dietary meals for residential care, mind-body activities, and lifestyle coaching."
+    },
+    {
+      "chunk_id": "comparison:4",
+      "source_id": "comparison",
+      "title": "Alternative Medicine Cost Abroad \u2014 Compare Prices 2026",
+      "url": "https://www.placidway.com/search-medical-pricings/Alternative-Medicine/All/1",
+      "source_type": "Price comparison",
+      "text": "International flights, outpatient hotel accommodation, long-term refills, emergency care, and travel or complications insurance are often not included."
+    },
+    {
+      "chunk_id": "comparison:5",
+      "source_id": "comparison",
+      "title": "Alternative Medicine Cost Abroad \u2014 Compare Prices 2026",
+      "url": "https://www.placidway.com/search-medical-pricings/Alternative-Medicine/All/1",
+      "source_type": "Price comparison",
+      "text": "The page says estimates vary and recommends requesting a personalized quote."
+    }
+  ]
+}
